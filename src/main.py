@@ -1,4 +1,5 @@
 import random
+from mathlib import Math
     
 class Mobil:
     speed: int = 0
@@ -19,7 +20,7 @@ class Toyota(Mobil):
 def main():
     # random.seed()
     # print(f"1-100: {random.randint(1, 100)}")
-    # print(f"{Math.add(69, 420)}")
+    print(f"{Math.add(69, 420)}")
 
     mobi = Toyota(10)
     print(f"{mobi.accel} {mobi.speed}")

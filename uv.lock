@@ -5,3 +5,18 @@ requires-python = ">=3.13"
 name = "main-app"
 version = "0.1.0"
 source = { virtual = "." }
+dependencies = [
+    { name = "sigma-dummy-mathlib" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "sigma-dummy-mathlib", specifier = ">=0.1.0" }]
+
+[[package]]
+name = "sigma-dummy-mathlib"
+version = "0.1.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/68/d4/973636ba9398b7feacb237a84d422bdfaeade7acdd08b10f442e09ccdf99/sigma_dummy_mathlib-0.1.0.tar.gz", hash = "sha256:5faa10a19a79ff065319a47fad5137f41fac78a7ef590174bd71c5b0d1998f35", size = 1041 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/52/86/8bb3985181d21f56dbdeacc2425a2a4b784e182d8cdf5b8fb145faee55dc/sigma_dummy_mathlib-0.1.0-py3-none-any.whl", hash = "sha256:8627b345f393ab55a752a73f8f94b3bc572dfc835fd9441eb02c16e9e44857d1", size = 1514 },
+]
